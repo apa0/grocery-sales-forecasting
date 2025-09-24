@@ -23,9 +23,9 @@ conda activate <your-class-env-name>
 	2.	Go to your Kaggle Account settings and scroll to API.
 	3.	Click Create New API Token – this downloads a file called kaggle.json.
 	4.	Place kaggle.json in ~/.kaggle/ (Linux/Mac) or C:\Users\<Windows-User>\.kaggle\ (Windows).
-mkdir -p ~/.kaggle
-mv ~/Downloads/kaggle.json ~/.kaggle/
-chmod 600 ~/.kaggle/kaggle.json
+	5. mkdir -p ~/.kaggle
+	6. mv ~/Downloads/kaggle.json ~/.kaggle/
+	7. chmod 600 ~/.kaggle/kaggle.json
 
 ### 4. Download Dataset
 
