@@ -10,13 +10,13 @@ This project uses the **Grocery Sales Forecasting** dataset from Kaggle.
 git clone https://github.com/<your-username>/grocery-sales-forecasting.git
 cd grocery-sales-forecasting
 
-2. Install Dependencies
+### 2. Install Dependencies
 We recommend using a conda environment (or virtualenv).
 conda create -n grocery-sales python=3.10 -y
 conda activate grocery-sales
 pip install -r requirements.txt
 
-3. Setup Kaggle API
+### 3. Setup Kaggle API
 	1.	Create a Kaggle account if you don’t already have one.
 	2.	Go to your Kaggle Account settings and scroll to API.
 	3.	Click Create New API Token – this downloads a file called kaggle.json.
@@ -25,7 +25,7 @@ mkdir -p ~/.kaggle
 mv ~/Downloads/kaggle.json ~/.kaggle/
 chmod 600 ~/.kaggle/kaggle.json
 
-4. Download Dataset
+### 4. Download Dataset
 
 Once Kaggle API is set up, run:
 kaggle datasets download -d littlesaplings/grocery-sales-forecasting-parquet -p data/raw/ --unzip
@@ -33,6 +33,6 @@ kaggle datasets download -d littlesaplings/grocery-sales-forecasting-parquet -p 
 The raw parquet files will appear in data/raw/.
 
 
-Notes
+### Notes
 	•	The dataset is not included in the repo because it’s large. Everyone must download it locally with the steps above.
 	•	Keep all raw data inside data/raw/ (this folder is git-ignored).
